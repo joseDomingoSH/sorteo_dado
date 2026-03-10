@@ -9,5 +9,5 @@ package sorteo_dado;
  * @author jSarabia
  */
 public class SorteoDado {
-    
+    public static int dado;
 }

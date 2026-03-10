@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package sorteo_dado;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author jSarabia
@@ -11,7 +11,7 @@ package sorteo_dado;
 public class TestSorteoDado {
     
     public static void main(String[] args) {
-        
+        JOptionPane.showMessageDialog("HOLA MUNDO");
     }
     
 }

@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 public class TestSorteoDado {
     
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog("HOLA MUNDO");
+        JOptionPane.showMessageDialog(null,"HOLA MUNDO");
     }
     
 }

@@ -9,7 +9,7 @@ package sorteo_dado;
  * @author jSarabia
  */
 public class SorteoDado {
-	public static String dado;
+	public static String dado; //Ian es gay
 	public static int resultado;
 
 	public static void lanzarDado(){

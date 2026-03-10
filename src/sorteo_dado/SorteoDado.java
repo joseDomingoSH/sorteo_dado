@@ -9,5 +9,10 @@ package sorteo_dado;
  * @author jSarabia
  */
 public class SorteoDado {
-    
+	public static String dado;
+	public static int resultado;
+
+	public static void lanzarDado(){
+	
+	}    
 }

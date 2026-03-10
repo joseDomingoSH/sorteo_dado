@@ -9,4 +9,11 @@ package sorteo_dado;
  * @author jSarabia
  */
 public class SorteoDado {
+
+	public static int dado; 
+	public static int resultado;
+
+	public static void lanzarDado(){
+	
+	}    
 }

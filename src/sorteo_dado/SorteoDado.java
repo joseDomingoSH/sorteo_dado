@@ -10,37 +10,29 @@ package sorteo_dado;
  */
 public class SorteoDado {
     // Hecho por Gerardo  <3
-    public static String dado;
-    public static int iteracion;
-    
-
-// Hecho por Gerardo  <3
-    public static String dado;
-    public static int iteracion;
-    
+    private static int dado;
+    private static int iteracion;
 
     public static int lanzarDado() {
         return (int) (Math.random() * 6) + 1;
     }
 
     public static String compararDado(){
-        int i = 1;
-        int d = 0;
-        String reporte = "";
+        String detalleReporte = "";
         
-        while(i <= 3){
+        while(iteracion <= 3){
             
-            d = lanzarDado();
+            dado = lanzarDado();
             
-            if (d == 1 || d == 2) {
-                reporte += "Iteración " + i + " \t " + " Dado: " + d + "\n";
-                i++;
-            }else if (d == 3 || d == 4 || d == 5 || d == 6){
-                reporte += "Iteración " + i + " \t " + "Dado: " + d + "\n";
+            if (dado == 1 || dado == 2) {
+                detalleReporte += "Iteración " + iteracion + " \t " + " Dado: " + dado + "\n";
+                iteracion++;
+            }else if (dado == 3 || dado == 4 || dado == 5 || dado == 6){
+                detalleReporte += "Iteración " + iteracion + " \t " + "Dado: " + dado + "\n";
                 break;
             }
         }
-        return reporte;
+        return detalleReporte;
     }
     // Hecho por Gerardo  <3
 }

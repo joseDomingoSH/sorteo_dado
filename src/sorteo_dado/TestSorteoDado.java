@@ -4,14 +4,28 @@
  */
 package sorteo_dado;
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 /**
  *
  * @author jSarabia
  */
 public class TestSorteoDado {
+    public static JTextArea textArea = new JTextArea(5,20);
+    public static JScrollPane scroll = new JScrollPane (textArea);
     
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null,"Hello My Friends");
+        String reporte = "";
+        int opcion;
+        opcion = JOptionPane.showConfirmDialog(null, "Quieres empezar el sorteo?");
+        if (opcion==0) {
+            reporte += "     Iteraciones del sorteo\n";
+            reporte += SorteoDado.compararDado();
+            textArea.setText(reporte);
+            JOptionPane.showMessageDialog(null, scroll);
+        } else {
+            JOptionPane.showMessageDialog(null, "Fin del sorteo");
+        }
     }
     
 }

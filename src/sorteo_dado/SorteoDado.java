@@ -19,7 +19,7 @@ public class SorteoDado {
 
     public static String compararDado(){
         String detalleReporte = "";
-        
+        iteracion = 1; //Hecho a la Mexicana por Ian 
         while(iteracion <= 3){
             
             dado = lanzarDado();

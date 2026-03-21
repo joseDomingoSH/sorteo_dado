@@ -35,4 +35,9 @@ public class SorteoDado {
         return detalleReporte;
     }
     // Hecho por Gerardo  <3
+
+    //Se agrega main solo para probar el método compararDado, para testearlo con paython
+    public static void main(String[] args) {
+        System.out.println(compararDado());
+    }
 }
